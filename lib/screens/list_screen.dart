@@ -25,31 +25,32 @@ class ListScreen extends StatelessWidget {
                   child: Row(
                     children: [
                       SizedBox(
-                          width: 150,
-                          height: 200,
-                          child: Stack(
-                            alignment: AlignmentDirectional.center,
-                            children: [
-                              Container(
-                                decoration: const BoxDecoration(
-                                  color: Color.fromARGB(128, 34, 34, 34),
-                                  borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(10),
-                                      bottomLeft: Radius.circular(10)),
-                                ),
+                        width: 150,
+                        height: 200,
+                        child: Stack(
+                          alignment: AlignmentDirectional.center,
+                          children: [
+                            Container(
+                              decoration: const BoxDecoration(
+                                color: Color.fromARGB(128, 34, 34, 34),
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(10),
+                                    bottomLeft: Radius.circular(10)),
                               ),
-                              SizedBox(
-                                  width: 140,
-                                  height: 140,
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image.network(
-                                      planta.url,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  )),
-                            ],
-                          )),
+                            ),
+                            SizedBox(
+                                width: 140,
+                                height: 140,
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(10),
+                                  child: Image.network(
+                                    planta.url,
+                                    fit: BoxFit.cover,
+                                  ),
+                                )),
+                          ],
+                        ),
+                      ),
                       Expanded(
                         child: Container(
                           decoration: const BoxDecoration(
