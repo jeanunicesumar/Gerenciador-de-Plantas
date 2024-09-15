@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
 class FormUtils {
-  static Widget buildDefaultInput(String description, String hint,
-      Color inputColor, Color iconColor, IconData icon, TextEditingController contoller) {
+  static Widget buildDefaultInput(
+      String description,
+      String hint,
+      Color inputColor,
+      Color iconColor,
+      IconData icon,
+      TextEditingController contoller) {
     return Padding(
       padding: const EdgeInsets.only(left: 10, right: 10),
       child: TextFormField(
@@ -54,22 +59,22 @@ class FormUtils {
   }
 
   static Widget buildTitleForm(String title, IconData iconTitle, Color color) {
-  return Padding(
-    padding: const EdgeInsets.all(20),
-    child: Row(
-      spacing: 5,
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Icon(
-          iconTitle,
-          color: color, 
-        ),
-        Text(
-          title,
-          style: TextStyle(color: color, fontSize: 14),
-        ),
-      ],
-    ),
-  );
-}
+    return Padding(
+      padding: const EdgeInsets.all(20),
+      child: Row(
+        spacing: 5,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(
+            iconTitle,
+            color: color,
+          ),
+          Text(
+            title,
+            style: TextStyle(color: color, fontSize: 14),
+          ),
+        ],
+      ),
+    );
+  }
 }
