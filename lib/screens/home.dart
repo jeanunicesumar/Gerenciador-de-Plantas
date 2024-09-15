@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
     final plantasToScrool = plantas.take(4).toList();
 
     final tipoContagem = ListUtils.getContagemTipo(plantas);
-    final regicaoContagem = ListUtils.getContagemRegiao(plantas);
+    final regiaoContagem = ListUtils.getContagemRegiao(plantas);
 
     return Scaffold(
       body: SingleChildScrollView(
@@ -96,7 +96,7 @@ class Home extends StatelessWidget {
                         ),
                       ),
                       Expanded(
-                        child: Grafico(regicaoContagem),
+                        child: Grafico(regiaoContagem),
                       ),
                     ],
                   ),
