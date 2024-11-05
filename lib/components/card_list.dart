@@ -51,7 +51,6 @@ class CardList extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.only(left: 20, top: 20),
                 child: Column(
-                  spacing: 4,
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -64,7 +63,6 @@ class CardList extends StatelessWidget {
                     ),
                     Text(planta.descricao),
                     Row(
-                      spacing: 20,
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text("Região: ${planta.regiao}"),
